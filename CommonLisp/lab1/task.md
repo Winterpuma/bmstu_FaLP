@@ -15,22 +15,33 @@ c) четвертый элементы заданного списка.
 
 **3. Что будет в результате вычисления выражений?**
 
-a) (CAADR ' ((blue cube) (red pyramid)))	c) (CADR ' ((abc) (def) (ghi)))  
-b) (CDAR '((abc) (def) (ghi)))	d) (CADDR ' ((abc) (def) (ghi)))  
+a) (CAADR ' ((blue cube) (red pyramid)))	    
+b) (CDAR '((abc) (def) (ghi)))	  
+c) (CADR ' ((abc) (def) (ghi)))  
+d) (CADDR ' ((abc) (def) (ghi)))  
 
 **4. Напишите результат вычисления выражений:**
 
-(list 'Fred 'and 'Wilma)	(cons 'Fred '(and Wilma))  
-(list 'Fred ' (and Wilma))	(cons 'Fred '(Wilma))  
-(cons Nil Nil)	(list Nil Nil)  
-(cons T Nil)	(list T Nil)  
-(cons Nil T)	(list Nil T)  
-(list Nil)	(cons T (list Nil))  
-(cons ' (T) Nil)	(list '(T) Nil)  
-(list ' (one two) ' (free temp))	(cons '(one two) '(free temp))  
+(list 'Fred 'and 'Wilma)	   
+(cons 'Fred '(and Wilma))      
+(list 'Fred '(and Wilma))	   
+(cons 'Fred '(Wilma))      
+(cons Nil Nil)	 
+(list Nil Nil)   
+(cons T Nil)	  
+(list T Nil)   
+(cons Nil T)	  
+(list Nil T)   
+(list Nil)	  
+(cons T (list Nil))   
+(cons '(T) Nil)	  
+(list '(T) Nil)   
+(list ' (one two) '(free temp))	   
+(cons '(one two) '(free temp))     
 
 **5.
 Написать функцию** (f arl ar2 ar3 ar4), возвращающую список: ((arl ar2) (ar3 ar4)).  
 Написать функцию (f arl ar2), возвращающую ((arl) (ar2)).  
 Написать функцию (f arl), возвращающую       (((arl))).  
 Представить результаты в виде списочных ячеек.  
+
