@@ -1,14 +1,14 @@
-### [INFO](/info)
+### [INFO](/CommonLisp/info)
 Методы и задания к лабам
 
-### [TASKS](/tasks)
+### [TASKS](/CommonLisp/tasks)
 Задания на лабы с исправленными ошибками и нужным разделением на подлабы
 
-### [REPORTS](/reports)
+### [REPORTS](/CommonLisp/reports)
 Мои отчеты к ЛР
 
-### [THEORY](/theory)
+### [THEORY](/CommonLisp/theory)
 Теория, которую нужно зазубрить, для сдачи Н.Б.
 
-### [DEFENSES](/defenses)
+### [DEFENSES](/CommonLisp/defenses)
 Практика, которую нужно сделать, для сдачи Ю.В
