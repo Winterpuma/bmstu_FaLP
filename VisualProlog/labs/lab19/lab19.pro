@@ -24,11 +24,10 @@ clauses
 		
 	sumOdd(List, Sum) :- sumOdd(List, 0, Sum).
 	sumOdd([], Sum, Sum) :- !.
-	sumOdd([H|[]], CurSum, Sum) :- 
-		Sum = CurSum + H, !.
-	sumOdd([H|[_|H2]], CurSum, Sum) :- 
+	sumOdd([_], Sum, Sum) :- !.
+	sumOdd([_|[H|T]], CurSum, Sum) :- 
 		NewSum = CurSum + H,
-		sumOdd(H2, NewSum, Sum).
+		sumOdd(T, NewSum, Sum).
 	
 goal
 	%listLen([0, 1, -2, 10], Len).
