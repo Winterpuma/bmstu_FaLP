@@ -11,20 +11,20 @@ predicates
 	
 clauses
 	listLen(List, Len) :- listLen(List, 0, Len).
-	listLen([], Len, Len) :- !.
+	listLen([], Len, Len).
 	listLen([_|T], CurLen, Len) :- 
 		NewLen = CurLen + 1,
 		listLen(T, NewLen, Len).
 
 	listSum(List, Sum) :- listSum(List, 0, Sum).
-	listSum([], Sum, Sum) :- !.
+	listSum([], Sum, Sum).
 	listSum([H|T], CurSum, Sum) :- 
 		NewSum = CurSum + H,
 		listSum(T, NewSum, Sum).
 		
 	sumOdd(List, Sum) :- sumOdd(List, 0, Sum).
-	sumOdd([], Sum, Sum) :- !.
-	sumOdd([_], Sum, Sum) :- !.
+	sumOdd([], Sum, Sum).
+	sumOdd([_], Sum, Sum).
 	sumOdd([_|[H|T]], CurSum, Sum) :- 
 		NewSum = CurSum + H,
 		sumOdd(T, NewSum, Sum).
